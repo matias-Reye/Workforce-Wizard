@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workforce Wizards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <nav class="navegacion">
+        <ul class="lista-navegacion">
+          <li class="item-navegacion"><a href="#slider">Inicio</a></li>
+          <li class="item-navegacion">
+            <a href="#calculadora">Calculadora Perdida Rotacion Laboral</a>
+          </li>
+          <li class="item-navegacion">
+            <a href="#acerca-nosotros">Acerca de Nosotros</a>
+          </li>
+          <li class="item-navegacion"><a href="#contacto">Contacto</a></li>
+          <!-- Puedes agregar más elementos de menú si es necesario -->
+        </ul>
+      </nav>
+    </div>
+    <div id="slider">
+      <div class="slide">
+        <h1 class="titulo-slider">Objetivo General del Proyecto</h1>
+        <p>
+          "Abordar desafíos organizacionales en recursos humanos mediante
+          profesionales que ofrecen soluciones para beneficiar a colaboradores y
+          la empresa en aspectos económicos, laborales y sociales, reduciendo
+          costos monetarios y emocionales."
+        </p>
+      </div>
+      <div class="slide">
+        <h1 class="titulo-slider">Objetivos Específicos del Proyecto</h1>
+        <ul class="lista-objetivos">
+          <li>
+            Desarrollar estrategias para fidelizar a colaboradores en su ámbito
+            profesional dentro de la organización.
+          </li>
+          <li>
+            Analizar de manera cuantitativa y cualitativa los costos de
+            contratación y liquidación de personal.
+          </li>
+          <li>
+            Detallar las políticas generales para fidelizar a los colaboradores
+            con sus organizaciones en cualquier industria.
+          </li>
+        </ul>
+      </div>
+      <div class="slide">
+        <h1 class="titulo-slider">Principal Tendencia Tecnológica</h1>
+        <p>
+          Nuestro proyecto se centra en apoyar a las organizaciones en el ámbito
+          de recursos humanos para reducir costos relacionados con el despido y
+          la contratación de personal, abarcando no solo aspectos financieros,
+          sino también laborales y sociales. Buscamos crear un entorno laboral
+          saludable y proporcionar soluciones y herramientas.
+        </p>
+        <p>
+          Priorizamos la incorporación de tecnología para ofrecer asesoría
+          eficiente, promover la inversión en recursos tecnológicos y fortalecer
+          las capacidades de los colaboradores. Implementaremos tendencias
+          tecnológicas, como el sistema Buk, para gestionar personas, mejorar
+          las habilidades de los colaboradores y facilitar la comunicación con
+          los clientes de manera rápida en situaciones críticas.
+        </p>
+      </div>
+      <div class="slide">
+        <h1 class="titulo-slider">Mercado Objetivo</h1>
+        <p>
+          Nuestro mercado objetivo se centrará en una primera instancia en
+          mediana empresas pertenecientes a la industria de construcción y
+          servicios administrativos/apoyo necesitadas de resolución de problemas
+          en recursos humanos como conflictos laborales o mejorar incluso el
+          desempeño del personal y se espera que en el mediano - largo plazo
+          poder atender a medianas empresas como así también a sucursales de
+          grandes empresas.
+        </p>
+      </div>
+    </div>
+
+    <div id="calculadora">
+      <h1>
+        ¿Quieres saber cuanto dinero te cuesta ese Puesto de trabajo que tiene
+        mucha rotacion laboral?
+      </h1>
+      <h2>Calculadora de costos de rotacion laboral- segun G&A Partners</h2>
+      <label for="salarioAnual"
+        >Salario Anual Promedio del Puesto laboral:
+      </label>
+      <input
+        type="number"
+        id="salarioAnual"
+        placeholder="Ingrese el salario anual"
+        min="0"
+      />
+
+      <label for="tipoTrabajo">Tipo de Trabajo:</label>
+      <select id="tipoTrabajo">
+        <option value="0.4">Nivel de entrada/no calificado</option>
+        <option value="0.55">Servicio/Produccion</option>
+        <option value="0.65">Administrativo</option>
+        <option value="0.875">Calificado por hora</option>
+        <option value="1">Profesional</option>
+        <option value="1.25">Tecnico</option>
+        <option value="1.25">Supervisor</option>
+      </select>
+
+      <button id="calcular">Calcular Pérdida</button>
+
+      <p id="resultado"></p>
+    </div>
+    <div id="acerca-nosotros">
+      <h1>Acerca de Nosotros</h1>
+      <p>
+        Somos un equipo de estudiantes de la Universidad Andrés Bello,
+        pertenecientes a la Facultad de Economía y Negocios, en la carrera de
+        Ingeniería Comercial. Nuestro proyecto, Workforce Wizards: Políticas de
+        Retención, busca abordar desafíos organizacionales en el área de
+        recursos humanos.
+      </p>
+      <p>Integrantes del Proyecto:</p>
+      <ul class="lista-integrantes">
+        <li>Luis Gaete</li>
+        <li>Lucas Ibarra</li>
+        <li>Natan Jelenkiewicz</li>
+        <li>Matías Reyes</li>
+        <li>Nataly Valerio</li>
+      </ul>
+      <p>Profesor Guía:</p>
+      <p>Esteban Gómez Sotta</p>
+    </div>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Workforce Wizards</h3>
+            <p>Proyecto de la Universidad Andrés Bello</p>
+            <p>Facultad de Economía y Negocios</p>
+            <p>Ingeniería Comercial</p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contacto</h3>
+            <p>Email: info@workforcewizards.com</p>
+            <p>Teléfono: +123 456 789</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 Workforce Wizards</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

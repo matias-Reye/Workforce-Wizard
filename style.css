@@ -1,0 +1,219 @@
+/* Elimina el desplazamiento horizontal */
+html,
+body {
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: rgba(34, 34, 34, 1);
+  background-color: rgba(0, 0, 0, 0.1);
+  width: auto; /* Ancho automático para ajustarse al contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+/* Estilos para el menú de navegación */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1000; /* Asegura que el menú esté en la parte superior */
+}
+
+.lista-navegacion {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.item-navegacion {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* Estilos para la lista personalizada */
+.lista-objetivos {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lista-objetivos li {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el slider */
+#slider {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px; /* Margen derecho para separar del contenido adyacente */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("/recursos/people-1979261.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin-right: 10px;
+  padding: 20px;
+  font-size: x-large;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  width: auto; /* Ancho automático para ajustarse al contenido */
+  margin: 20px auto; /* Centra con margen adicional */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titulo-slider {
+  color: #fffbfb;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+#calculadora {
+  width: 100%;
+  height: 60vh;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p#resultado {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+/* Estilos para el mensaje de error */
+p#error {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Estilos para los párrafos */
+p {
+  margin-right: 20px; /* Margen derecho para separar del contenido adyacente */
+}
+
+#acerca-nosotros {
+  background-color: #ffffff;
+  color: #333333;
+}
+/* Estilos para el footer */
+.footer .container-footer {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid transparent; /* Establece el borde como transparente */
+  border-radius: 5px;
+}
+.footer {
+  color: #000000;
+  padding: 5px 0; /* Reducimos la altura del footer aún más */
+  font-size: 13px;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-contact {
+  flex: 1;
+}
+
+.footer-info h3,
+.footer-contact h3 {
+  font-size: 18px;
+}
+
+.footer-copyright {
+  text-align: center;
+  clear: both;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
